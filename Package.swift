@@ -41,8 +41,8 @@ if let parserLibSearchPath = ProcessInfo.processInfo.environment["SWIFT_SYNTAX_P
 #if os(macOS)
 let parserLibraryTarget: [Target] = [.binaryTarget(
   name: "_InternalSwiftSyntaxParser",
-  url: "https://github.com/shimastripe/swift-syntax/releases/download/0.50700.1/_InternalSwiftSyntaxParser.xcframework.zip",
-  checksum: "f9408ffad85da93aa3a3174f74650e0c5abcd6f9617facc5dd4774825259d7e9"
+  url: "https://github.com/shimastripe/swift-syntax/releases/download/0.50700.2/_InternalSwiftSyntaxParser.xcframework.zip",
+  checksum: "15cf7fb1f4cfd8e223baf8b842d2c84658633ea2e39dd95ca2aca1f687e8f6b2"
 )]
 let parserLibraryDependency: [Target.Dependency] = [.target(name: "_InternalSwiftSyntaxParser", condition: .when(platforms: [.macOS]))]
 #else
